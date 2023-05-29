@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation 'br.com.caelum.vraptor:vraptor-amazonS3:4.0.1'
+    implementation 'de.adorsys:dfs-connection-impl-amazons3:1.0.0'
+    implementation 'io.streamthoughts:kafka-connect-filepulse-amazons3-fs:2.8.0'
+    implementation 'software.amazon.neptune:amazon-neptune-jdbc-driver:3.0.0'
+    implementation 'com.amazonaws:amazon-kinesis-producer:0.15.5'
+    implementation 'com.meltwater.fawn:auth_2.13:0.2'
+    implementation 'com.firstbird:backbone-gson_2.13:3.0.0-RC10'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+    implementation 'com.amazonaws:aws-java-sdk-s3'
+}
+
+test {
+    useJUnitPlatform()
+}
