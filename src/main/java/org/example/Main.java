@@ -2,8 +2,6 @@ package org.example;
 
 import java.io.File;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public AwsS3 awsS3 = AwsS3.getInstance();
 
@@ -13,10 +11,9 @@ public class Main {
         File file = new File("D:\\img\\cc.png");
 
         String key = "img/cc.png";
-        //String copyKey = "img/my-img-copy.img";
 
         //upload 실행하기.
-        main.upload(file,key);
+        main.upload(file, key);
     }
 
     //업로드

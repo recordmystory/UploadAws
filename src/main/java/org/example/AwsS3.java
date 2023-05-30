@@ -20,7 +20,7 @@ public class AwsS3 {
     // Amazon-s3-sdk
     private AmazonS3 s3Client;
     final private String accessKey = "AKIA26QYARV6BQSW2BOF"; // 액세스키
-    final private String secretkey = "AXWXkMG9+K9+xKtfZ7pTSAyxaig9hLJ3ZdravpDn"; // 스크릿 엑세스 키
+    final private String secretkey = "AXWXkMG9+K9+xKtfZ7pTSAyxaig9hLJ3ZdravpDn"; // 시크릿 엑세스 키
 
     private Regions clientRegion = Regions.AP_NORTHEAST_2; // 한국
     private String bucket = "inhatcs1"; // 버킷 명
@@ -29,7 +29,6 @@ public class AwsS3 {
         createS3Client();
     }
 
-    // singleton 으로 구현
     static private AwsS3 instance = null;
 
     public static AwsS3 getInstance() {
