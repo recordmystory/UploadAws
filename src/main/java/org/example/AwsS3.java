@@ -19,8 +19,8 @@ import java.io.File;
 public class AwsS3 {
     // Amazon-s3-sdk
     private AmazonS3 s3Client;
-    final private String accessKey = "AKIA26QYARV6BQSW2BOF"; // 액세스키
-    final private String secretkey = "AXWXkMG9+K9+xKtfZ7pTSAyxaig9hLJ3ZdravpDn"; // 시크릿 엑세스 키
+    final private String accessKey = ""; // 액세스키
+    final private String secretkey = ""; // 시크릿 엑세스 키
 
     private Regions clientRegion = Regions.AP_NORTHEAST_2; // 한국
     private String bucket = "inhatcs1"; // 버킷 명
